@@ -20,17 +20,32 @@
 /* 引入思源黑体中文书法字体 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap');
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #000; /* 可选：设置背景颜色以避免默认白色 */
+  border: none; /* 去掉默认边框 */
+  overflow: hidden; /* 禁止滚动条 */
+  
+}
+
 .home {
   height: 100vh;
   background: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('/home.webp') center/cover;
+    url('/images/home.webp') center/contain;
   position: relative;
   display: flex;
   flex-direction: column; /* 让内容上下排列 */
   align-items: center;
   justify-content: space-between; /* 上半部分和下半部分分开 */
-  overflow: hidden;
+  border: none;
 }
 
 /* overlay 中的内容 */
@@ -51,7 +66,7 @@
 .chinese-brush {
   font-family: 'Zhi Mang Xing', cursive; /* 新书法字体 */
   font-weight: 700;
-  font-size: 10rem; /* 调整更大的字体 */
+  font-size: 7rem; /* 调整更大的字体 */
   letter-spacing: 0.5rem;
   display: block;
   animation: fadeInUp 1s ease;
@@ -59,7 +74,7 @@
 
 .subtitle {
   font-family: 'Noto Serif SC', serif;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 1rem;
   color: #ffd700;
   opacity: 0.9;
@@ -110,4 +125,5 @@
     transform: translateY(0);
   }
 }
+
 </style>
