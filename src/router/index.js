@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
 import Menu from '../components/Menu.vue'
 import CategoryPage from '../components/CategoryPage.vue'
