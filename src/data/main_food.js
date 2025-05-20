@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export default [
   { name: '炸酱面', description: '老北京地道酱香', price: 10, image: '/images/main_food/bomb_sauce_noodles.webp' },
   { name: '担担面', description: '麻辣鲜香川味魂', price: 12, image: '/images/main_food/dandan_noodles.webp' },
