@@ -54,6 +54,7 @@ export default {
 .overlay {
   text-align: center;
   color: white;
+  margin-top: -100px;
 }
 
 .title {
