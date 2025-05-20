@@ -22,10 +22,10 @@ export default {
   data() {
     return {
       categories: [
-        { name: '热菜', route: 'hot' },
+        { name: '热菜', route: 'big' },
         { name: '凉菜', route: 'cold' },
-        { name: '主食', route: 'main' },
-        { name: '饮品', route: 'drink' },
+        { name: '小炒', route: 'fire' },
+        { name: '主食', route: 'main_food' },
         { name: '小吃', route: 'snack' }
       ]
     }
