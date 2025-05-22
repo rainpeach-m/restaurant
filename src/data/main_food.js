@@ -1,16 +1,19 @@
 const base = import.meta.env.BASE_URL;
 
 export default [
+  { name: '牛肉炒面', description: '镬气焦香 牛肉大块', price: 15, image: `${base}images/main_food/beef_fire_noodles.webp` },
   { name: '炸酱面', description: '老北京地道酱香', price: 10, image: `${base}images/main_food/bomb_sauce_noodles.webp` },
   { name: '担担面', description: '麻辣鲜香川味魂', price: 12, image: `${base}images/main_food/dandan_noodles.webp` },
   { name: '蛋炒饭', description: '粒粒金黄香软入味', price: 8, image: `${base}images/main_food/egg_rice.webp` },
   { name: '金汤肥牛面', description: '酸辣金汤肥牛鲜', price: 15, image: `${base}images/main_food/golden_noodles.webp` },
   { name: '兰州牛肉面', description: '清汤劲道牛肉香', price: 15, image: `${base}images/main_food/lanzhou_beef_noodles.webp` },
   { name: '羊肉烩面', description: '浓汤烩面羊肉鲜', price: 20, image: `${base}images/main_food/mutton_hui_noodles.webp` },
+  { name: '油泼面', description: '滚油激香 裤带宽面', price: 10, image: `${base}images/main_food/oil_poured_noodles.webp` },
   { name: '豚骨拉面', description: '浓白骨汤 溏心蛋颤', price: 20, image: `${base}images/main_food/pork_bone_noodles.webp` },
   { name: '红烧牛肉面', description: '浓香红烧大块牛肉', price: 20, image: `${base}images/main_food/red_beef_noodles.webp` },
   { name: '陕北臊子面', description: '臊子香辣陕北味', price: 15, image: `${base}images/main_food/saozi_noodles.webp` },
   { name: '葱油拌面', description: '葱香四溢现熬油', price: 10, image: `${base}images/main_food/scallion_oil_noodles.webp` },
   { name: '酸菜牛肉面', description: '酸爽开胃牛肉嫩', price: 20, image: `${base}images/main_food/sour_beef_noodles.webp` },
   { name: '扬州炒饭', description: '正宗淮扬配料足', price: 15, image: `${base}images/main_food/yangzhou_rice.webp` },
+  { name: '五常大米', description: '五常稻香 粒粒分明', price: 3, image: `${base}images/main_food/zzz_rice.webp` }
 ];

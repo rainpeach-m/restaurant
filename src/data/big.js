@@ -13,4 +13,5 @@ export default [
   { name: '酸菜鱼', description: '酸爽金汤嫩滑鱼', price: 68, image: `${base}images/big/sour_fish.webp` },
   { name: '麻婆豆腐', description: '川魂麻辣烫嫩豆', price: 28, image: `${base}images/big/spicy_tofu.webp` },
   { name: '番茄牛腩', description: '浓汤煨制牛腩酥', price: 68, image: `${base}images/big/tomato_beef.webp` },
+  { name: '黄焖鸡', description: '砂锅酱焖 骨酥肉滑', price: 38, image: `${base}images/big/yellow_chicken.webp` },
 ];
