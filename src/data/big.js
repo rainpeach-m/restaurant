@@ -7,6 +7,7 @@ export default [
   { name: '可乐鸡翅', description: '可乐沁骨 甜嫩脱骨', price: 38, image: `${base}images/big/cola_wings.webp` },
   { name: '鸭血炖豆腐', description: '嫩滑双鲜 汤醇味厚', price: 28, image: `${base}images/big/duck_blood_tofu.webp` },
   { name: '蒜泥白肉', description: '透光肥瘦 蒜浪拍岸', price: 28, image: `${base}images/big/garlic_white_meat.webp` },
+  { name: '铁板牛排', description: '铁板嗞响 原切肉汁', price: 48, image: `${base}images/big/iron_steak.webp` },
   { name: '溜肉段', description: '东北老式 焦壳爆汁', price: 38, image: `${base}images/big/meat_paragragh.webp` }, 
   { name: '梅菜扣肉', description: '梅香透脂 古法蒸制', price: 58, image: `${base}images/big/mei_vege_pork.webp` },
   { name: '京酱肉丝', description: '北方甜酱配脆葱丝', price: 38, image: `${base}images/big/Peking_sauce_meat.webp` },

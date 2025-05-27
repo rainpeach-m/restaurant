@@ -1,11 +1,19 @@
 const base = import.meta.env.BASE_URL;
 
 export default [
+  { name: '黄桃罐头', description: '童年琥珀 果肉颤甜', price: 8, image: `${base}images/snack/canned_yellow_peach.webp` },
   { name: '长沙臭豆腐', description: '黑色经典 蒜辣灌汤', price: 10, image: `${base}images/snack/changsha_smelly_tofu.webp` },
   { name: '东坡肉', description: '琥珀酒香 酥方脂凝', price: 18, image: `${base}images/snack/east_sidehill_pork.webp` },
+  { name: '葡式蛋挞', description: '焦糖斑纹 葡式酥皮', price: 10, image: `${base}images/snack/egg_tart.webp` },
   { name: '炸茄盒', description: '茄肉爆浆 黄金脆衣', price: 15, image: `${base}images/snack/eggplant_box.webp` },
   { name: '麦肯套餐', description: '拳打K记 脚踢麦麦', price: 22, image: `${base}images/snack/fried_chicken_suit.webp` },
   { name: '炸平菇', description: '酥如薄纸 椒盐撒欢', price: 15,  image: `${base}images/snack/fried_flat_mushroom.webp` },
   { name: '港式烧腊', description: '明炉脆皮 蜜汁透光', price: 22, image: `${base}images/snack/HongKong_charsiu.webp` },
   { name: '小酥肉', description: '椒麻酥衣 肉汁暗涌', price: 10, image: `${base}images/snack/little_su_meat.webp` },
+  { name: '章鱼小丸子', description: '日式街风 木鱼花舞', price: 10, image: `${base}images/snack/octopus_ball.webp` },
+  { name: '冰镇葡萄汁', description: '冰晶沁爽 葡萄冷萃', price: 8, image: `${base}images/snack/z_grape_juice.webp` },
+  { name: '冰镇阿萨姆', description: '冰晶沁爽 茶香丝滑', price: 8, image: `${base}images/snack/z_milk_tea.webp` },
+  { name: '纯牛奶', description: '黄金奶源 零添加醇', price: 3, image: `${base}images/snack/z_milk.webp` },
+  { name: '冰镇橙汁', description: '冰晶沁爽 果粒爆汁', price: 8, image: `${base}images/snack/z_orange_juice.webp` },
+  { name: '冰镇桃汁', description: '冰晶沁爽 蜜桃甜吻', price: 8, image: `${base}images/snack/z_peach_juice.webp` },
 ];
