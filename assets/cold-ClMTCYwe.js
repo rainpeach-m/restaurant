@@ -1,1 +1,0 @@
-const e="/restaurant/",a=[{name:"皮蛋豆腐",description:"冰镇嫩脂 流心皮蛋",price:10,image:`${e}images/cold/Q_tofu.webp`},{name:"口水鸡",description:"红油沁骨 麻香透肉",price:20,image:`${e}images/cold/saliva_chicken.webp`}];export{a as default};
