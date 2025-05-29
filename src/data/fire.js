@@ -10,7 +10,7 @@ export default [
   { name: '黄瓜虾仁', description: '翡翠白玉 鲜嫩双脆', price: 28, image: `${base}images/fire/cucumber_shrimp.webp` },
   { name: '孜然羊肉', description: '西北炙烤 香料裹羊', price: 38, image: `${base}images/fire/cumin_mutton.webp` },
   { name: '干煸四季豆', description: '虎皮焦纹 肉末干香', price: 18, image: `${base}images/fire/dry_fire_bean.webp` },
-  { name: '干煸鱼片', description: '干香鱼片 麻辣焦酥', price: 32, image: `${base}images/fire/dry_fire_fish.webp` },
+  { name: '干煸鱼片', description: '干香鱼片 麻辣焦酥', price: 38, image: `${base}images/fire/dry_fire_fish.webp` },
   { name: '干锅土豆', description: '焦边土豆 麻辣干香', price: 18, image: `${base}images/fire/dry_pot_potato.webp` },
   { name: '干锅千页豆腐', description: '干香入味 素中带荤', price: 18, image: `${base}images/fire/dry_pot_thousands_tofu.webp` },
   { name: '小炒黄牛肉', description: '猛火快炒 鲜嫩湘辣', price: 38, image: `${base}images/fire/fire_yellow_beef.webp` },
@@ -25,7 +25,7 @@ export default [
   { name: '葱爆臭干', description: '臭干焦香 葱香四溢', price: 18, image: `${base}images/fire/scallion_smelly_tofu.webp` },
   { name: '葱爆素鸡', description: '葱油沁香 素鸡弹嫩', price: 18, image: `${base}images/fire/scallion_vege_chicken.webp` },
   { name: '辣子鸡', description: '鸡丁酥脆 麻辣过瘾', price: 28, image: `${base}images/fire/spicy_chicken.webp` },
-  { name: '手撕包菜', description: '铁锅炝炒 猪油沁脆', price: 15, image: `${base}images/fire/tear_cabbage.webp` },
+  { name: '手撕包菜', description: '铁锅炝炒 猪油沁脆', price: 12, image: `${base}images/fire/tear_cabbage.webp` },
   { name: '番茄鸡蛋', description: '家常酸甜 嫩滑蓬松', price: 12, image: `${base}images/fire/tomato_egg.webp` },
   { name: '木须肉', description: '家常小炒 三鲜荟萃', price: 28, image: `${base}images/fire/wood_pork.webp` },
 ];
