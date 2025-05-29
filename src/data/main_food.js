@@ -3,6 +3,7 @@ const base = import.meta.env.BASE_URL;
 export default [
   { name: '牛肉炒面', description: '镬气焦香 牛肉大块', price: 15, image: `${base}images/main_food/beef_fire_noodles.webp` },
   { name: '炸酱面', description: '老北京地道酱香', price: 10, image: `${base}images/main_food/bomb_sauce_noodles.webp` },
+  { name: '凉皮', description: '透光米皮 辣油泼金', price: 8, image: `${base}images/main_food/cold_skin.webp` },
   { name: '担担面', description: '麻辣鲜香川味魂', price: 12, image: `${base}images/main_food/dandan_noodles.webp` },
   { name: '鸭血粉丝汤', description: '金陵风味 鲜汤滑血', price: 12,  image: `${base}images/main_food/duck_blood_fans.webp` },
   { name: '蛋炒饭', description: '粒粒金黄香软入味', price: 8, image: `${base}images/main_food/egg_rice.webp` },

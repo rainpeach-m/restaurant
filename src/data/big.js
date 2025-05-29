@@ -6,6 +6,7 @@ export default [
   { name: '水煮牛肉', description: '滑嫩牛肉 红油浸香', price: 58, image: `${base}images/big/boil_meat.webp` },
   { name: '可乐鸡翅', description: '可乐沁骨 甜嫩脱骨', price: 38, image: `${base}images/big/cola_wings.webp` },
   { name: '鸭血炖豆腐', description: '嫩滑双鲜 汤醇味厚', price: 28, image: `${base}images/big/duck_blood_tofu.webp` },
+  { name: '毛血旺', description: '麻辣血浪 百味争鲜', price: 48, image: `${base}images/big/fur_blood_bark.webp` }, 
   { name: '蒜泥白肉', description: '透光肥瘦 蒜浪拍岸', price: 28, image: `${base}images/big/garlic_white_meat.webp` },
   { name: '铁板牛排', description: '铁板嗞响 原切肉汁', price: 48, image: `${base}images/big/iron_steak.webp` },
   { name: '溜肉段', description: '东北老式 焦壳爆汁', price: 38, image: `${base}images/big/meat_paragragh.webp` }, 
