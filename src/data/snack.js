@@ -2,16 +2,13 @@ const base = import.meta.env.BASE_URL;
 
 export default [
   { name: '烤冷面', description: '铁板嗞响 蛋酱交响', price: 12, image: `${base}images/snack/BBQ_cold_noodles.webp` }, 
+  { name: '东坡肉', description: '琥珀酒香 酥方脂凝', price: 18, image: `${base}images/snack/east_sidehill_pork.webp` },
   { name: '桥头排骨', description: '桥头秘方 骨酥蒜浪', price: 19, image: `${base}images/snack/bridge_head_rib.webp` }, 
-  { name: '黄桃罐头', description: '童年琥珀 果肉颤甜', price: 8, image: `${base}images/snack/canned_yellow_peach.webp` },
   { name: '长沙臭豆腐', description: '黑色经典 蒜辣灌汤', price: 9, image: `${base}images/snack/changsha_smelly_tofu.webp` },
   { name: '烤鸡腿', description: '焦糖脆皮 肉汁暗涌', price: 9, image: `${base}images/snack/chicken_leg.webp` },
-  { name: '东坡肉', description: '琥珀酒香 酥方脂凝', price: 18, image: `${base}images/snack/east_sidehill_pork.webp` },
-  { name: '葡式蛋挞', description: '焦糖斑纹 葡式酥皮', price: 9, image: `${base}images/snack/egg_tart.webp` },
   { name: '炸茄盒', description: '茄肉爆浆 黄金脆衣', price: 15, image: `${base}images/snack/eggplant_box.webp` },
   { name: '麦肯套餐', description: '拳打K记 脚踢麦麦', price: 22, image: `${base}images/snack/fried_chicken_suit.webp` },
   { name: '炸平菇', description: '酥如薄纸 椒盐撒欢', price: 16,  image: `${base}images/snack/fried_flat_mushroom.webp` },
-  { name: '油炸冰淇淋', description: '冰火奇袭 黄金脆甲', price: 3, image: `${base}images/snack/fried_icecream.webp` },
   { name: '港式烧腊', description: '明炉脆皮 蜜汁透光', price: 19, image: `${base}images/snack/HongKong_charsiu.webp` },
   { name: '红烧狮子头', description: '七瘦三肥 掌中颤肉', price: 8, image: `${base}images/snack/lion_head.webp` },
   { name: '小酥肉', description: '椒麻酥衣 肉汁暗涌', price: 12, image: `${base}images/snack/little_su_meat.webp` },
@@ -26,8 +23,14 @@ export default [
   { name: '热狗', description: '爆汁肉肠 蜂蜜芥末', price: 8, image: `${base}images/snack/hot_dog.webp` },
   { name: '鲜肉锅贴', description: '冰花脆底 肉馅喷香', price: 8, image: `${base}images/snack/pot_paste.webp` },
   { name: '三文鱼寿司', description: '挪威橙霞 山葵轻吻', price: 28, image: `${base}images/snack/salmon_sushi.webp` },
-  { name: '香芋地瓜丸', description: '双色太极 流心烫舌', price: 18, image: `${base}images/snack/taro_ball.webp` },
   { name: '锡纸娃娃菜', description: '蒜蓉金汤 鲜甜本味', price: 12, image: `${base}images/snack/tin_foil_cabbage.webp` },
+
+  // 甜品
+  { name: '黄桃罐头', description: '童年琥珀 果肉颤甜', price: 8, image: `${base}images/snack/canned_yellow_peach.webp` },
+  { name: '油炸冰淇淋', description: '冰火奇袭 黄金脆甲', price: 3, image: `${base}images/snack/fried_icecream.webp` },
+  { name: '葡式蛋挞', description: '焦糖斑纹 葡式酥皮', price: 9, image: `${base}images/snack/egg_tart.webp` },
+  { name: '香芋地瓜丸', description: '双色太极 流心烫舌', price: 18, image: `${base}images/snack/taro_ball.webp` },
+
 
   // 喝的
   { name: '冰可乐', description: '气泡炸喉 透心冰爽', price: 5, image: `${base}images/snack/z_cola.webp` },
