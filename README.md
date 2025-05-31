@@ -1,5 +1,35 @@
-# Vue 3 + Vite
+# 菜单
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+请输入文字
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 加入后端
+
+### 1. 目的与作用
+
+| 功能类型       | 原因                                         |
+| -------------- | -------------------------------------------- |
+| 数据动态管理   | 替代静态文件，支持添加/删除/修改菜品         |
+| 权限/用户系统  | 允许管理员登录后管理菜单                     |
+| 数据存储持久化 | 使用数据库保存菜品信息，不再依赖前端本地文件 |
+| 点餐功能拓展   | 可以记录顾客下单信息，支持支付、订单状态等   |
+| 日志与统计     | 后台可查看浏览量、下单记录、热度统计等       |
+
+### 2. 用户层
+
+* 浏览菜品
+* 下单、管理购物车
+* 查询订单状态、随时加餐
+* 支付
+
+### 3. 管理员层
+
+* 管理菜品、种类
+* 用户订单管理
+* 数据分析、销售统计
+
+## 其他改进
+
+1. 搜索。目前只支持关键字搜索，未来可考虑加入内容关联，如"猪肉""素""重口味"
+2. 搜索。目前是类内搜索。添加全局搜索，附带展示类名
+3. 内嵌一个训练好的 AI，当做服务员解答顾客任何疑问
+4.
