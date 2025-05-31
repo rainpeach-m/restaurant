@@ -18,6 +18,18 @@ export default [
   { name: '章鱼小丸子', description: '日式街风 木鱼花舞', price: 15, image: `${base}images/snack/octopus_ball.webp` },
   { name: '香酥凤尾虾', description: '凤尾金翎 虾肉弹月', price: 20, image: `${base}images/snack/phoenix_tail_shrimp.webp` },
   { name: '鸡蛋羹', description: '镜面滑嫩 瑶柱点睛', price: 8, image: `${base}images/snack/steamed_egg.webp` },
+  { name: '烤茄子', description: '蒜油汪洋 茄肉化泥', price: 15, image: `${base}images/snack/BBQ_eggplant.webp` },
+  { name: '蟹黄包', description: '吸管先品 金汤爆涌', price: 28, image: `${base}images/snack/crab_yellow_bag.webp` },
+  { name: '油炸鳕鱼排', description: '雪白鱼浪 黄金脆甲', price: 8, image: `${base}images/snack/fried_codfish.webp` },
+  { name: '黄金炸猪排', description: '日式厚切 肉汁暗潮', price: 28, image: `${base}images/snack/golden_pork.webp` },
+  { name: '手抓饼', description: '千层金丝 掌心余温', price: 8, image: `${base}images/snack/hand_grab_pancake.webp` },
+  { name: '热狗', description: '爆汁肉肠 蜂蜜芥末', price: 8, image: `${base}images/snack/hot_dog.webp` },
+  { name: '鲜肉锅贴', description: '冰花脆底 肉馅喷香', price: 8, image: `${base}images/snack/pot_paste.webp` },
+  { name: '三文鱼寿司', description: '挪威橙霞 山葵轻吻', price: 28, image: `${base}images/snack/salmon_sushi.webp` },
+  { name: '香芋地瓜丸', description: '双色太极 流心烫舌', price: 18, image: `${base}images/snack/taro_ball.webp` },
+  { name: '锡纸娃娃菜', description: '蒜蓉金汤 鲜甜本味', price: 12, image: `${base}images/snack/tin_foil_cabbage.webp` },
+
+  // 喝的
   { name: '冰可乐', description: '气泡炸喉 透心冰爽', price: 5, image: `${base}images/snack/z_cola.webp` },
   { name: '冰镇葡萄汁', description: '冰晶沁爽 葡萄冷萃', price: 5, image: `${base}images/snack/z_grape_juice.webp` },
   { name: '青梅绿茶', description: '梅酸解腻 茶香回甘', price: 5, image: `${base}images/snack/z_green_plum.webp` }, 

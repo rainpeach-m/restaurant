@@ -6,6 +6,7 @@ export default [
   { name: '爆炒鸡胗', description: '脆嫩双生 泡椒爆击', price: 28, image: `${base}images/fire/chicken_gizzard.webp` },
   { name: '米椒炒鸡', description: '青红米椒 嫩鸡过瘾', price: 38, image: `${base}images/fire/chili_chicken.webp` },
   { name: '辣椒炒肉', description: '香辣油润 锅气十足', price: 38, image: `${base}images/fire/chili_pork.webp` },
+  { name: '爆炒猪肝', description: '猛火滑肝 泡椒点睛', price: 38, image: `${base}images/fire/pig_liver.webp` },
   { name: '韭菜鸡蛋', description: '韭香裹嫩蛋 家常烟火味', price: 12, image: `${base}images/fire/chives_egg.webp` },
   { name: '黄瓜虾仁', description: '翡翠白玉 鲜嫩双脆', price: 28, image: `${base}images/fire/cucumber_shrimp.webp` },
   { name: '孜然羊肉', description: '西北炙烤 香料裹羊', price: 38, image: `${base}images/fire/cumin_mutton.webp` },
