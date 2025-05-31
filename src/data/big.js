@@ -27,4 +27,9 @@ export default [
   { name: '麻婆豆腐', description: '川魂麻辣烫嫩豆', price: 28, image: `${base}images/big/spicy_tofu.webp` },
   { name: '番茄牛腩', description: '浓汤煨制牛腩酥', price: 68, image: `${base}images/big/tomato_beef.webp` },
   { name: '黄焖鸡', description: '砂锅酱焖 骨酥肉滑', price: 38, image: `${base}images/big/yellow_chicken.webp` },
-];
+  { name: '砂锅藕夹', description: '藕断丝连 肉汁封砂', price: 38, image: `${base}images/big/lotus_root_clip.webp` }, 
+  { name: '麻辣小酥肉', description: '椒麻脆网 肉汁暗涌', price: 38, image: `${base}images/big/spicy_su_meat.webp` }, 
+  { name: '啤酒鸭', description: '麦香沁骨 鸭肉化纱', price: 58, image: `${base}images/big/beer_duck.webp` },
+  { name: '香酥烤羊排', description: '草原脂香 焦脆脱骨', price: 68, image: `${base}images/big/roasted_sheep_ribs.webp` },
+  { name: '酸汤肥牛', description: '金汤酸浪 肥牛滑浪', price: 58, image: `${base}images/big/sour_fat_beef.webp` }, 
+]

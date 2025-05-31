@@ -23,6 +23,9 @@ export default [
   { name: '芝士焗饭', description: '拉丝马苏 奶香烩饭', price: 18, image: `${base}images/main_food/cheese_rice.webp` },
   { name: '扬州炒饭', description: '正宗淮扬配料足', price: 15, image: `${base}images/main_food/yangzhou_rice.webp` },
   { name: '蛋炒饭', description: '粒粒金黄香软入味', price: 8, image: `${base}images/main_food/egg_rice.webp` },
+  { name: '什锦炒饭', description: '八珍汇炒 镬气穿云', price: 18, image: `${base}images/main_food/mixed_rice.webp` }, 
+  { name: '海鲜炒饭', description: '虾贝跃金 鱿鱼卷雪', price: 18, image: `${base}images/main_food/seafood_rice.webp` }, 
+  { name: '腊肠炒饭', description: '广式腊味 米粒镶油', price: 12, image: `${base}images/main_food/sausage_rice.webp` },
 
   // 粉
   { name: '新疆炒米粉', description: '酱爆辣浪 馕香裹汁', price: 15, image: `${base}images/main_food/newborader_rice_noodles.webp` },
@@ -31,6 +34,7 @@ export default [
   { name: '徐州肉酱米线', description: '秘制肉酱 汤底醇厚', price: 15, image: `${base}images/main_food/meat_rice_noodles.webp` },
   { name: '凉皮', description: '透光米皮 辣油泼金', price: 8, image: `${base}images/main_food/cold_skin.webp` },
   { name: '酸辣粉', description: '手工红薯粉 老坛酸香', price: 9, image: `${base}images/main_food/sour_spicy_rice_noodles.webp` },
+  { name: '砂锅土豆粉', description: '浓汤裹粉 砂锅余沸', price: 15, image: `${base}images/main_food/potato_powder.webp` },
 
   // 杂七杂八
   { name: '鲜肉馄饨', description: '薄皮透光 肉馅爆汁', price: 15, image: `${base}images/main_food/meat_cloud_swallow.webp` },
