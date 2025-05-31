@@ -1,9 +1,8 @@
 <template>
   <div class="category-page">
     <div class="overlay">
-      <!-- 顶部操作栏：返回 + 搜索框 -->
+      <!-- 顶部操作栏 -->
       <div class="top-bar">
-        <!-- 返回按钮 -->
         <div class="back-button" @click="$router.push('/menu')" title="返回菜单">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
@@ -31,13 +30,27 @@
       <h2 class="title">{{ categoryTitle }}</h2>
 
       <div class="dish-grid">
-        <div class="dish-card" v-for="dish in filteredDishes" :key="dish.name">
+        <div class="dish-card" v-for="dish in filteredDishes" :key="dish.name" @click="openDish(dish)">
           <img :src="dish.image" :alt="dish.name" class="dish-image" />
           <div class="dish-info">
             <h3 class="dish-name">{{ dish.name }}</h3>
             <p class="dish-description">{{ dish.description }}</p>
             <span class="dish-price">￥{{ dish.price }}</span>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 放大详情弹窗 -->
+    <div class="modal-overlay" v-if="selectedDish" @click.self="closeDish">
+      <div class="modal-content modal-enter">
+        <div class="modal-image">
+          <img :src="selectedDish.image" :alt="selectedDish.name" />
+        </div>
+        <div class="modal-info">
+          <h3>{{ selectedDish.name }}</h3>
+          <p class="price">￥{{ selectedDish.price }}</p>
+          <p class="description">{{ selectedDish.description }}</p>
         </div>
       </div>
     </div>
@@ -53,8 +66,8 @@ const type = ref(route.params.type);
 const dishes = ref([]);
 const categoryTitle = ref('');
 const searchText = ref('');
+const selectedDish = ref(null); // 当前放大查看的菜品
 
-// 中文标题映射
 const titleMap = {
   big: '热菜',
   cold: '凉菜',
@@ -63,7 +76,6 @@ const titleMap = {
   snack: '小吃'
 };
 
-// 加载对应种类数据
 const loadDishes = async () => {
   try {
     const data = await import(`../data/${type.value}.js`);
@@ -76,14 +88,20 @@ const loadDishes = async () => {
   }
 };
 
-// 过滤后的菜品列表
 const filteredDishes = computed(() =>
   dishes.value.filter(dish =>
     dish.name.includes(searchText.value)
   )
 );
 
-// 初始加载 + 路由变化监听
+const openDish = (dish) => {
+  selectedDish.value = dish;
+};
+
+const closeDish = () => {
+  selectedDish.value = null;
+};
+
 onMounted(loadDishes);
 watch(() => route.params.type, (newType) => {
   type.value = newType;
@@ -96,7 +114,7 @@ watch(() => route.params.type, (newType) => {
 
 .category-page {
   min-height: 100vh;
-  background: 
+  background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/images/home.webp') center/cover no-repeat;
   display: flex;
@@ -112,11 +130,10 @@ watch(() => route.params.type, (newType) => {
   max-width: 1200px;
 }
 
-/* 顶部操作栏 */
 .top-bar {
   position: relative;
   display: flex;
-  justify-content: center; /* 使搜索框居中 */
+  justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
   min-height: 40px;
@@ -132,7 +149,6 @@ watch(() => route.params.type, (newType) => {
   font-size: 1.2rem;
   cursor: pointer;
   transition: color 0.3s ease;
-  width: fit-content;
 }
 
 .back-button:hover {
@@ -148,7 +164,6 @@ watch(() => route.params.type, (newType) => {
   font-weight: bold;
 }
 
-/* 搜索区域 */
 .search-container {
   display: flex;
   align-items: center;
@@ -179,7 +194,6 @@ watch(() => route.params.type, (newType) => {
   color: #ccc;
 }
 
-/* 标题 */
 .title {
   font-size: 2.8rem;
   color: #ffd700;
@@ -188,7 +202,6 @@ watch(() => route.params.type, (newType) => {
   letter-spacing: 0.2rem;
 }
 
-/* 菜品列表 */
 .dish-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -201,6 +214,7 @@ watch(() => route.params.type, (newType) => {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .dish-card:hover {
@@ -236,4 +250,89 @@ watch(() => route.params.type, (newType) => {
   color: #fff;
   font-weight: bold;
 }
+
+/* 弹窗样式 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  background: #222;
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.modal-image {
+  flex: 1;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-info {
+  flex: 1;
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 关键点：让内容分布在上下 */
+  text-align: center; /* 所有文字居中 */
+}
+
+.modal-info h3 {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.modal-info .price {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin: 2rem 0;
+}
+
+.modal-info .description {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 6rem;
+}
+
+
+/* 弹窗进入动画 */
+.modal-enter {
+  animation: modalFadeIn 0.25s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 </style>
